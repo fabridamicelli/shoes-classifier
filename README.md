@@ -39,7 +39,9 @@ Since I ran all the experiments with this train/valid split provided by the kagg
 For that, I collected (web scraping) new photos that I used as a test split after finishing the experiments.
 I was surprised with the model's ability to generalize to unseen data, as we could see on the test-split results.
 
-![png](images/conf.png)
+<p align="center">
+  <img src="images/conf.png">
+</p>
 
 
 ## A few other takeaways/learnings
