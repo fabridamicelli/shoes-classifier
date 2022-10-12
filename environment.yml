@@ -1,0 +1,13 @@
+name: shoes_classifier
+channels:
+  - fastchan
+  - defaults
+dependencies:
+  - python>=3.9
+  - fastai
+  - pip
+  - pip:
+    - fastbook
+    - timm
+    - jupyterlab
+    - ipywidgets
