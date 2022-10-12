@@ -1,6 +1,6 @@
 # Shoes classifier
 
-![png](https://github.com/fabridamicelli/shoes-classifier/blob/master/images/shoes.png)
+![png](images/shoes.png)
 
 This is a little beginner computer vision project to learn a bit more about it hands-on, using the [fastai library](https://docs.fast.ai/), [timm pytorch models](https://github.com/rwightman/pytorch-image-models) and the [nike-adidas-and-converse-imaged kaggle dataset](https://www.kaggle.com/datasets/die9origephit/nike-adidas-and-converse-imaged) as well as scraped images.
 
@@ -39,7 +39,7 @@ Since I ran all the experiments with this train/valid split provided by the kagg
 For that, I collected (web scraping) new photos that I used as a test split after finishing the experiments.
 I was surprised with the model's ability to generalize to unseen data, as we could see on the test-split results.
 
-![png](https://github.com/fabridamicelli/shoes-classifier/blob/master/images/conf.png)
+![png](images/conf.png)
 
 
 ## A few other takeaways/learnings
@@ -53,7 +53,7 @@ Some experiments had better results, but not very consistently. Take away: the b
 In hindsight, sticking to the smaller model could have been better – it was a bit annoying to run the model evaluation on my small laptop and a similar performance could have been achieved by training longer/using more augmentations (as we saw in the experiments). Maybe \o/
 
 ## Further work
-  - [] analize similarity (are we cheating by looking at same image twice (after download)?)
-  - [] randomized crop augmentation might be worth trying
-  - [] The model seems to still make some mistakes on what to my eyes are "easy" examples. It may be worth investigating why.
-  - [] Deploy little app
+  - [ ] analize similarity (are we cheating by looking at same image twice (after download)?)
+  - [ ] randomized crop augmentation might be worth trying
+  - [ ] The model seems to still make some mistakes on what to my eyes are "easy" examples. It may be worth investigating why.
+  - [ ] Deploy little app
