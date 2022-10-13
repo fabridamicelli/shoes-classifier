@@ -13,7 +13,7 @@ This is a little beginner computer vision project to learn a bit more about it h
 ## Run the code
 The easiest way is to create a conda virtual environment:
 ```shell
-conda create -f environment.yml
+conda env create -f environment.yml
 ```
 
 The names of the notebooks reflects the order of the work I did.
