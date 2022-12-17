@@ -10,13 +10,11 @@ This is a little beginner computer vision project to learn a bit more about it h
 - [Extend dataset](03_extend_dataset.ipynb): Create a new test dataset by downloading (a few hundred) photos from the internet
 - [Evaluate model](04_prediction_test.ipynb): Evaluate model on the test dataset
 
-## Run the code
-The easiest way is to create a conda virtual environment:
-```shell
-conda env create -f environment.yml
-```
+## Results
 
-The names of the notebooks reflects the order of the work I did.
+<p align="center">
+  <img src="images/conf.png">
+</p>
 
 ## Thoughts/Ideas
 In this notebooks I document a handful of quick experiments that I ran trying to solve this task.
@@ -39,10 +37,6 @@ Since I ran all the experiments with this train/valid split provided by the kagg
 For that, I collected (web scraping) new photos that I used as a test split after finishing the experiments.
 I was surprised with the model's ability to generalize to unseen data, as we could see on the test-split results.
 
-<p align="center">
-  <img src="images/conf.png">
-</p>
-
 
 ## A few other takeaways/learnings
 Rotation augmentation: Rotating the images seemed to be an obviously benefitial augmentation to me a priori because many images are themselves rotated in the original dataset.
@@ -53,6 +47,14 @@ I thought I could make a better job of fine-tuning by doing some one-cycle froze
 Some experiments had better results, but not very consistently. Take away: the built-in heuristic to adjust the learning rate in the fastai's `fine_tune` method is pretty good (at least for this dataset and these architectures)!
 
 In hindsight, sticking to the smaller model could have been better – it was a bit annoying to run the model evaluation on my small laptop and a similar performance could have been achieved by training longer/using more augmentations (as we saw in the experiments). Maybe \o/
+
+## Run the code
+The easiest way is to create a conda virtual environment:
+```shell
+conda env create -f environment.yml
+```
+
+The names of the notebooks reflects the order of the work I did.
 
 ## Further work
   - [ ] analize similarity (are we cheating by looking at same image twice (after download)?)
